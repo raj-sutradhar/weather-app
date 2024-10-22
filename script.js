@@ -1,4 +1,4 @@
-const apiKey = 'YOUR_API_KEY'; // Replace with your OpenWeatherMap API key
+const apiKey = '5e93fc947357f44bb9d12f9dd4e6ca31'; 
 
 async function getWeather() {
     const city = document.getElementById('cityInput').value.trim();
@@ -39,22 +39,22 @@ function displayWeather(weatherData) {
 function getWeatherEmoji(weatherMain) {
     switch (weatherMain.toLowerCase()) {
         case 'clear':
-            return '☀️';  // Sunny
+            return '☀️';  
         case 'clouds':
-            return '☁️';  // Cloudy
+            return '☁️'; 
         case 'rain':
-            return '🌧';  // Rainy
+            return '🌧'; 
         case 'drizzle':
-            return '🌦';  // Light Rain
+            return '🌦';  
         case 'thunderstorm':
-            return '⛈';  // Thunderstorm
+            return '⛈';  
         case 'snow':
-            return '❄️';  // Snow
+            return '❄️'; 
         case 'mist':
         case 'fog':
         case 'haze':
-            return '🌫';  // Misty or Foggy
+            return '🌫';  
         default:
-            return '❓';  // Unknown weather condition
+            return '❓';  
     }
 }
