@@ -1,0 +1,122 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* Container Styling */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Title Styling */
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+}
+
+/* Input Box Styling */
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    font-size: 16px;
+    margin-right: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    text-align: center;
+}
+
+input::placeholder {
+    color: #fff;
+    opacity: 0.8;
+}
+
+/* Button Styling */
+button {
+    padding: 10px 20px;
+    background-color: #1f8ef1;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #007bff;
+}
+
+/* Weather Info Section */
+.weather-info {
+    margin-top: 30px;
+}
+
+.weather-info h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.weather-info p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Temperature Styling */
+.weather-info .temperature {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+/* Weather Condition Styling */
+.weather-info .condition {
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+/* Weather Icon Styling */
+.weather-icon {
+    margin-top: 10px;
+}
+
+.weather-icon img {
+    width: 100px;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+    }
+}
