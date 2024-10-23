@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 * {
     margin: 0;
@@ -5,118 +6,170 @@
     box-sizing: border-box;
 }
 
-
 body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #4facfe, #00f2fe);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
     color: #fff;
+    line-height: 1.6;
+    min-height: 100vh;
+    padding: 20px;
 }
-
 
 .container {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    padding: 30px;
-    text-align: center;
-    width: 350px;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(8.5px);
-    -webkit-backdrop-filter: blur(8.5px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    max-width: 400px;
+    margin: 0 auto;
 }
-
 
 h1 {
-    font-size: 28px;
+    font-size: 2rem;
+    font-weight: 500;
     margin-bottom: 20px;
-    color: #f0f0f0;
+    display: flex;
+    align-items: center;
 }
 
+h1 .weather-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
 
 .search-box {
     display: flex;
-    justify-content: center;
     margin-bottom: 20px;
 }
 
-input {
-    width: 200px;
-    padding: 10px;
+#cityInput {
+    flex-grow: 1;
+    padding: 10px 15px;
+    font-size: 1rem;
     border: none;
-    border-radius: 25px;
-    outline: none;
-    font-size: 16px;
-    margin-right: 10px;
-    background: rgba(255, 255, 255, 0.3);
+    border-radius: 25px 0 0 25px;
+    background-color: rgba(255, 255, 255, 0.2);
     color: #fff;
-    text-align: center;
 }
 
-input::placeholder {
-    color: #fff;
-    opacity: 0.8;
+#cityInput::placeholder {
+    color: rgba(255, 255, 255, 0.7);
 }
-
 
 button {
     padding: 10px 20px;
-    background-color: #1f8ef1;
-    border: none;
-    border-radius: 25px;
+    font-size: 1rem;
+    background-color: #3498db;
     color: white;
-    font-size: 16px;
+    border: none;
+    border-radius: 0 25px 25px 0;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
 }
 
 button:hover {
-    background-color: #007bff;
+    background-color: #2980b9;
 }
 
+.search-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
 
 .weather-info {
-    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(10px);
 }
 
 .weather-info h2 {
-    font-size: 32px;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
-.weather-info p {
-    font-size: 18px;
+.weather-main {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.weather-icon {
+    font-size: 4rem;
+    margin-right: 20px;
+}
+
+.temperature {
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.condition {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.weather-details {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.weather-details div {
+    flex: 1;
+}
+
+.detail-icon {
+    width: 40px;
+    height: 40px;
     margin-bottom: 5px;
 }
 
-
-.weather-info .temperature {
-    font-size: 48px;
-    font-weight: bold;
-    margin: 15px 0;
+.weather-details p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
 }
 
-
-.weather-info .condition {
-    font-size: 24px;
-    text-transform: capitalize;
+.weather-details span {
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
-
-.weather-icon {
-    margin-top: 10px;
+.forecast {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
 }
 
-.weather-icon img {
-    width: 100px;
+.forecast h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
 }
 
+.forecast-container {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
 
-@media (max-width: 400px) {
-    .container {
-        width: 90%;
-    }
+.forecast-item {
+    text-align: center;
+    min-width: 60px;
+}
+
+.forecast-item .day {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.forecast-item .forecast-icon {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.forecast-item .forecast-temp {
+    font-size: 1rem;
 }
