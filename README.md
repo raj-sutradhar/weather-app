@@ -34,10 +34,3 @@ SkyCast relies on the **OpenWeatherMap API** for fetching weather data. To use t
 - API Docs: [OpenWeatherMap API Documentation](https://openweathermap.org/api)
 
 ---
-
-## ⚡ Setup Instructions
-
-### 1. Clone the Repository:
-
-```bash
-git clone https://github.com/yourusername/SkyCast.git
